@@ -1,0 +1,74 @@
+﻿@model ExamenT2.Models.Alumno
+
+@{
+    ViewBag.Title = "Detalle del Alumno";
+}
+
+<h2>Detalle del Alumno</h2>
+
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAlumno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAlumno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota4)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Retornar a Lista", "Index", null, new { @class = "btn btn-default" })
+</p>
